@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_120sdp"
+    app:cardCornerRadius="@dimen/_6sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_5sdp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4D4E50">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/videoThumb"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/ic_play"
+            android:layout_centerInParent="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentBottom="true"
+            android:background="#90000000">
+
+            <TextView
+                android:id="@+id/videoName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="video Name"
+                android:textColor="#FFF"
+                android:layout_alignParentStart="true"
+                android:maxLength="10"
+                android:textSize="@dimen/_10sdp"
+                android:maxLines="1"
+                android:layout_alignParentBottom="true"/>
+
+            <TextView
+                android:id="@+id/videoDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="#FFF"
+                android:layout_alignParentBottom="true"
+                android:text="Video duration"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentTop="true"
+            android:background="#90000000">
+
+            <ImageView
+                android:id="@+id/imageFolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_folder"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/folderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="folder Name"
+                android:layout_toRightOf="@id/imageFolder"
+                android:textColor="#FFF"
+                android:maxLength="11"
+                android:textSize="@dimen/_10sdp"
+                android:maxLines="1"
+                android:layout_alignParentBottom="true"/>
+
+            <TextView
+                android:id="@+id/videoSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="#FFF"
+                android:layout_alignParentBottom="true"
+                android:text="Video Size"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
